@@ -76,6 +76,10 @@ function Reply({ dispatch, reply, commentId }) {
             }
         </li >
     )
+
+    function closeReply(e) {
+        e.keyCode === 27 && status === 'reply' ? setStatus('') : null
+    }
 }
 
 export default Reply
