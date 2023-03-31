@@ -1,0 +1,90 @@
+@use '../abstracts/breakpoints' as *;
+@use '../abstracts/colors' as *;
+
+.vote {
+    min-height: 2.5rem;
+    aspect-ratio: 2.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .55rem;
+    border-color: transparent;
+
+    @include desktop {
+        flex-direction: column;
+        min-width: 2.5rem;
+        height: 6rem;
+        aspect-ratio: 0;
+    }
+
+    button {
+        min-height: 100%;
+        aspect-ratio: 1;
+        border: none;
+        cursor: pointer;
+        display: flex;
+
+        &:hover>svg>path {
+            fill: $moderate-blue;
+        }
+
+        @include desktop {
+            min-height: calc(100% / 3);
+        }
+    }
+}
+
+.buttons {
+    display: grid;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+
+    @include desktop {
+        flex-wrap: nowrap;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        padding-block: .5rem;
+
+        @include desktop {
+            padding-block: 0;
+        }
+
+        svg {
+            margin-inline-end: .5rem;
+        }
+    }
+
+    &-edit,
+    &-reply {
+
+        &:hover,
+        &:focus {
+            color: #C5C6EF;
+
+            >svg>path {
+                fill: #C5C6EF;
+            }
+        }
+    }
+
+    &-delete {
+
+        &:hover,
+        &:focus {
+            color: $pale-red;
+
+            >svg>path {
+                fill: $pale-red;
+            }
+        }
+    }
+}
+
+.voted>svg>path {
+    fill: $moderate-blue;
+}

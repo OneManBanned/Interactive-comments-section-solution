@@ -1,0 +1,66 @@
+$moderate-blue: hsl(238, 40%, 52%);
+$soft-Red: hsl(358, 79%, 66%);
+$light-grayish-blue: hsl(239, 57%, 85%);
+$pale-red: hsl(357, 100%, 86%);
+
+$dark-blue: hsl(212, 24%, 26%);
+$grayish-Blue: hsl(211, 10%, 45%);
+$light-gray: hsl(223, 19%, 93%);
+$very-light-gray: hsl(228, 33%, 97%);
+$white: hsl(0, 0%, 100%);
+
+// Background colors
+
+.body-bg {
+    background-color: $very-light-gray;
+}
+
+.bg-wht {
+    background-color: $white;
+}
+
+.bg-mb {
+    background-color: $moderate-blue;
+}
+
+.bg-gb {
+    background-color: $grayish-Blue;
+}
+
+.bg-sr {
+    background-color: $soft-Red;
+}
+
+.bg-db {
+    background-color: $dark-blue;
+}
+
+// Font colors
+
+.clr-mb {
+    color: $moderate-blue;
+}
+
+.clr-sr {
+    color: $soft-Red;
+}
+
+.clr-gb {
+    color: $grayish-Blue;
+}
+
+.clr-db {
+    color: $dark-blue;
+}
+
+.clr-lg {
+    color: $light-gray;
+}
+
+.clr-lbg {
+    color: $light-grayish-blue;
+}
+
+.clr-wht {
+    color: white;
+}

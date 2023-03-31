@@ -1,0 +1,60 @@
+@use '../abstracts/breakpoints' as *;
+@use '../abstracts/colors' as *;
+
+
+body {
+    padding-inline: 1rem;
+}
+
+main {
+    margin: auto;
+    padding-block: 1.5rem;
+
+    @include desktop {
+        margin: auto auto;
+        max-width: 45rem;
+    }
+}
+
+.commentsContainer {
+
+    form {
+        margin-block-start: -.5rem;
+        margin-block-end: 1rem;
+    }
+
+    >li>section {
+        margin-block-end: 1rem;
+    }
+}
+
+.repliesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-left: 2px $light-gray solid;
+    gap: 1rem;
+    margin-block: 1rem;
+
+    @include desktop {
+        margin-inline-start: 2.5rem;
+    }
+
+    form {
+        margin-block-start: .5rem;
+        margin-block-end: 0rem;
+    }
+
+    .comment-form__edit {
+        margin-block-start: 0;
+    }
+
+    >li {
+        min-width: 100%;
+        padding-left: 1rem;
+
+        @include desktop {
+            padding-inline-start: 2.5rem;
+        }
+    }
+}
